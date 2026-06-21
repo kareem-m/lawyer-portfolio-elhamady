@@ -187,6 +187,29 @@ nav {
                 }
             }
         }
+
+
+        .menu-toggle {
+            display: none;
+        }
+
+        .burger-menu {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            z-index: 1001;
+
+            span {
+                display: block;
+                width: 25px;
+                height: 3px;
+                background-color: #fff;
+                border-radius: 3px;
+                transition: transform 0.3s ease, opacity 0.3s ease;
+            }
+        }
+
         .links {
             display: flex;
             justify-content: space-between;
@@ -216,6 +239,90 @@ nav {
         }
     }
 }
+
+
+@media (max-width: 768px) {
+    nav {
+        padding: 12px 0;
+
+        .container {
+            .burger-menu {
+                display: flex;
+            }
+
+            .links {
+                position: fixed;
+                top: 0;
+                right: -300px;
+                width: 260px;
+                height: 100vh;
+                background-color: #111;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: 25px;
+                padding: 80px 30px 30px 30px;
+                box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
+                transition: right 0.4s cubic-bezier(0.1, 0.9, 0.2, 1);
+                z-index: 1000;
+
+                a {
+                    width: 100%;
+                    font-size: 16px;
+                    padding-bottom: 10px;
+                }
+                
+                .cta-button {
+                    border-bottom: none;
+                    text-align: center;
+                    margin-top: 10px;
+                }
+            }
+
+            .menu-toggle:checked ~ .links {
+                right: 0;
+            }
+
+            .menu-toggle:checked ~ .burger-menu {
+                span:nth-child(1) {
+                    transform: translateY(8px) rotate(45deg);
+                }
+                span:nth-child(2) {
+                    opacity: 0;
+                }
+                span:nth-child(3) {
+                    transform: translateY(-8px) rotate(-45deg);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        .container {
+            .logoBox {
+                a {
+                    .logo {
+                        width: 30px;
+                        height: 30px;
+                    }
+                    .name {
+                        p {
+                            font-size: 12px;
+                        }
+                        p:last-child {
+                            font-size: 9px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
 
 
 footer {

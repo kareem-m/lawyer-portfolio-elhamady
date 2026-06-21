@@ -15,6 +15,14 @@ export default function Navbar() {
                         </div>
                     </Link>
                 </div>
+
+                <input type="checkbox" id="menu-toggle" className="menu-toggle" />
+                <label htmlFor="menu-toggle" className="burger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
                 <div className="links">
                     <Link href="/">الرئيسيه</Link>
                     <Link href="#services">خدماتنا</Link>
@@ -23,7 +31,6 @@ export default function Navbar() {
                     <Link href="/contact">استشارة مجانية</Link>
                 </div>
             </div>
-            
         </nav>
     );
 }
