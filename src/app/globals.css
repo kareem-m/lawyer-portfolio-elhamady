@@ -11,10 +11,6 @@
 
 html {
     scroll-behavior: smooth;
-    /* For change scroll bar in firefox*/
-    scrollbar-color: var(--main-color, #07f) #fff;
-    scrollbar-width: thin;
-    /*or auto*/
     direction: rtl;
 }
 
@@ -34,20 +30,16 @@ body {
 
 /* For change scroll bar */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
     height: 5px;
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--main-background, #fff);
+    background: var(--bg-color, #000);
 }
 
 ::-webkit-scrollbar-thumb {
     background: var(--main-color, #07f);
-}
-
-::-webkit-scrollbar-thumb:hover {
-    border: 1px solid #fff;
 }
 
 /* global values */
