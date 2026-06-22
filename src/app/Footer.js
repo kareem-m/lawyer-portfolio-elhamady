@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function Footer() {
     return (
         <footer>
-            <div className="container">
+            <div className="container" data-aos="fade-up">
 
                 <div className="top">
                     <div className="info">

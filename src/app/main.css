@@ -323,8 +323,11 @@
 @media (max-width: 480px) {
     .about {
         p {
-            font-size: 13px;
-            text-align: justify;
+            font-size: 12px;
+        }
+        
+        a {
+            font-size: 12px;
         }
         
         .container {

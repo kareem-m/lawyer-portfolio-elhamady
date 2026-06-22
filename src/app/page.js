@@ -9,7 +9,7 @@ export default function Home() {
         <>
             <Navbar />
             <div className="landing">
-                <div className="container">
+                <div className="container" data-aos="fade-up">
                     <div>
                         <div className="popup">
                             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-award" data-dev-file="/app/src/pages/index.tsx" data-dev-line="65" data-dev-id="57f79f"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path><circle cx="12" cy="8" r="6"></circle></svg>
@@ -29,7 +29,7 @@ export default function Home() {
                 </div>
             </div>
             
-            <div id="services" className="services">
+            <div id="services" className="services" data-aos="fade-up">
                 <StatsSection />
                 <div className="container">
                     <div className="title" data-aos="fade-up">
@@ -38,9 +38,9 @@ export default function Home() {
                         <p>نقدم طيفاً واسعاً من الخدمات القانونية والمالية المتخصصة لحماية مصالحكم وتحقيق أهدافكم.</p>
                     </div>
 
-                    <div className="servicesList" data-aos="fade-up">
+                    <div className="servicesList">
                         
-                        <div className="box">
+                        <div className="box" data-aos="fade-up">
                             <div className="icon">
                                 <div className="svgIcon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" class="lucide lucide-scale text-primary" data-dev-file="/app/src/pages/index.tsx" data-dev-line="155" data-dev-id="dcfd25"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"></path><path d="M7 21h10"></path><path d="M12 3v18"></path><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"></path></svg>
@@ -50,7 +50,7 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div className="box">
+                        <div className="box" data-aos="fade-up">
                             <div className="icon">
                                 <div className="svgIcon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text text-primary" data-dev-file="/app/src/pages/index.tsx" data-dev-line="155" data-dev-id="dcfd25"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>
@@ -60,7 +60,7 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div className="box">
+                        <div className="box" data-aos="fade-up">
                             <div className="icon">
                                 <div className="svgIcon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up text-primary" data-dev-file="/app/src/pages/index.tsx" data-dev-line="155" data-dev-id="dcfd25"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
@@ -70,7 +70,7 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div className="box">
+                        <div className="box" data-aos="fade-up">
                             <div className="icon">
                                 <div className="svgIcon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield text-primary" data-dev-file="/app/src/pages/index.tsx" data-dev-line="155" data-dev-id="dcfd25"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></svg>
@@ -80,7 +80,7 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div className="box">
+                        <div className="box" data-aos="fade-up">
                             <div className="icon">
                                 <div className="svgIcon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users text-primary" data-dev-file="/app/src/pages/index.tsx" data-dev-line="155" data-dev-id="dcfd25"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
@@ -90,7 +90,7 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div className="box">
+                        <div className="box" data-aos="fade-up">
                             <div className="icon">
                                 <div className="svgIcon">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap text-primary" data-dev-file="/app/src/pages/index.tsx" data-dev-line="155" data-dev-id="dcfd25"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path><path d="M22 10v6"></path><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path></svg>
@@ -156,9 +156,9 @@ export default function Home() {
                         <p>لماذا تختارنا</p>
                         <h1>التزامنا بتحقيق العدالة</h1>
                     </div>
-                    <div className="featuresList" data-aos="fade-up">
+                    <div className="featuresList">
 
-                        <div className="box">
+                        <div className="box" data-aos="fade-up">
                             <div className="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-graduation-cap text-primary" data-dev-file="/app/src/pages/index.tsx" data-dev-line="283" data-dev-id="a69c0a"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path><path d="M22 10v6"></path><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path></svg>
                             </div>
@@ -166,7 +166,7 @@ export default function Home() {
                             <p>ماجستير في القانون العام، وباحث دكتوراه في القانون الجنائي.</p>
                         </div>
 
-                        <div className="box">
+                        <div className="box" data-aos="fade-up">
                             <div className="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe text-primary" data-dev-file="/app/src/pages/index.tsx" data-dev-line="283" data-dev-id="a69c0a"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
                             </div>
@@ -174,7 +174,7 @@ export default function Home() {
                             <p>عضو سابق في قوات حفظ السلام الأممية، وخريج معهد الأمم المتحدة الآسيوي والشرق أقصى لمنع الجريمة ومعاملة المجرمين (UNAFEI) — طوكيو، اليابان، وعضو جمعية خريجي جايكا اليابانية.</p>
                         </div>
 
-                        <div className="box">
+                        <div className="box" data-aos="fade-up">
                             <div className="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield text-primary" data-dev-file="/app/src/pages/index.tsx" data-dev-line="283" data-dev-id="a69c0a"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></svg>
                             </div>
