@@ -209,7 +209,7 @@
     }
     .container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr));
         justify-content: space-around;
         align-items: center;
         gap: 20px;
@@ -323,11 +323,11 @@
 @media (max-width: 480px) {
     .about {
         p {
-            font-size: 12px;
+            font-size: 14px;
         }
         
         a {
-            font-size: 12px;
+            font-size: 14px;
         }
         
         .container {
