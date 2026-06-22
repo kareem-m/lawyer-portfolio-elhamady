@@ -107,7 +107,7 @@
 .services {
     margin-bottom: 50px;
     .stats {
-        background-color: #0a0c11;
+        background-color: var(--second-bg-color);
         color: #fff;
         padding: 20px 0;
 
@@ -179,10 +179,10 @@
             margin-top: 50px;
 
             .box {
-                background-color: #1C1F26;
+                background-color: var(--box-color);
                 padding: 15px;
                 border-radius: 20px;
-                border: 1px solid #2C2F36;
+                border: 1px solid #303030;
                 transition: all 0.3s ease-in-out;
                 &:hover {
                     border-color: var(--main-color);
@@ -378,10 +378,10 @@
             margin-top: 50px;
 
             .box {
-                background-color: #1C1F26;
+                background-color: var(--box-color);
                 padding: 15px;
                 border-radius: 20px;
-                border: 1px solid #2C2F36;
+                border: 1px solid #303030;
                 transition: all 0.3s ease-in-out;
                 &:hover {
                     border-color: var(--main-color);
@@ -472,10 +472,10 @@
         }
 
         .contactForm {
-            background-color: #1C1F26;
+            background-color: var(--box-color);
             padding: 30px;
             border-radius: 20px;
-            border: 1px solid #2C2F36;
+            border: 1px solid #303030;
             width: 100%;
             max-width: 600px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -493,7 +493,7 @@
                 }
 
                 input, textarea {
-                    background-color: #0a0c11;
+                    background-color: var(--second-bg-color);
                     border: 1px solid #2C2F36;
                     border-radius: 10px;
                     padding: 12px 15px;

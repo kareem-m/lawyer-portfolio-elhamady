@@ -1,5 +1,7 @@
 :root {
-    --bg-color: #0E1217;
+    --bg-color: #121212;
+    --second-bg-color: #0E0E0E;
+    --box-color: #252525;
     --main-color: #C6A740;
 }
 
@@ -147,7 +149,7 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--bg-color);
+    background-color: var(--second-bg-color);
     color: #eee;
     padding: 15px 0;
     font-size: 14px;
@@ -327,7 +329,7 @@ nav {
 
 
 footer {
-    background-color: #0A0C11;
+    background-color: var(--second-bg-color);
     padding: 50px 0;
 
     .container {
