@@ -29,7 +29,7 @@ export default function Home() {
                 </div>
             </div>
             
-            <div id="services" className="services" data-aos="fade-up">
+            <div id="services" className="services">
                 <StatsSection />
                 <div className="container">
                     <div className="title" data-aos="fade-up">

@@ -41,7 +41,7 @@ export default function StatsSection() {
 
     return (
         <section ref={sectionRef} className="stats">
-            <div className="container">
+            <div className="container" data-aos="fade-up">
                 <div className="box">
                     <h2 className="count" data-target="30">0</h2>
                     <p>عام خبرة قانونية</p>
