@@ -27,7 +27,7 @@ export default function Navbar() {
                     <Link href="/">الرئيسيه</Link>
                     <Link href="#services">خدماتنا</Link>
                     <Link href="#about">عن المكتب</Link>
-                    <Link href="/contact">تواصل معنا</Link>
+                    <Link href="#contact">تواصل معنا</Link>
                     <Link href="/contact">استشارة مجانية</Link>
                 </div>
             </div>

@@ -184,7 +184,7 @@ export default function Home() {
 
                     </div>
 
-                    <div className="contactSection" data-aos="fade-up">
+                    <div className="contactSection" id="contact" data-aos="fade-up">
                         <h1>هل تحتاج إلى استشارة قانونية؟</h1>
                         <p>لا تتردد في التواصل معنا. نقدم استشارة أولية مجانية لجميع القضايا.</p>
                         <a href="/contact">احجز استشارتك الآن</a>

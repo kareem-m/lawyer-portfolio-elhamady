@@ -80,11 +80,23 @@
                 color: #fff;
                 border-radius: 17px;
                 padding: 7px 10px;
+                border: 1px solid var(--main-color);
+                transition: all 0.3s ease-in-out;
                 &:first-child {
                     background-color: var(--main-color);
+                    &:hover {
+                        background-color: #c6a7404b;
+                        color: var(--main-color);
+                        transform: translateY(-2px);
+                    }
                 }
                 &:last-child {
                     border: 1px solid var(--main-color);
+                    &:hover {
+                        transform: translateY(-2px);
+                        background-color: #c6a7404b;
+                        color: #fff;
+                    }
                 }
             }
         }
