@@ -32,13 +32,13 @@ export default function Home() {
             <div id="services" className="services">
                 <StatsSection />
                 <div className="container">
-                    <div className="title">
+                    <div className="title" data-aos="fade-up">
                         <p>خدماتنا القانونية</p>
                         <h1>نخدمكم في جميع المجالات القانونية</h1>
                         <p>نقدم طيفاً واسعاً من الخدمات القانونية والمالية المتخصصة لحماية مصالحكم وتحقيق أهدافكم.</p>
                     </div>
 
-                    <div className="servicesList">
+                    <div className="servicesList" data-aos="fade-up">
                         
                         <div className="box">
                             <div className="icon">
@@ -106,11 +106,11 @@ export default function Home() {
             <div className="about" id="about">
                 <div className="container">
                     <div className="imageSection">
-                        <div className="image">
+                        <div className="image" data-aos="fade-up">
                             <img src="/photo.jpg"></img>
                         </div>
                     </div>
-                    <div className="textSection">
+                    <div className="textSection" data-aos="fade-up">
                         <h1>مكتب اللواء/ محمد الحمادي</h1>
                         <p>للمحاماة والاستشارات القانونية والمالية</p>
 
@@ -152,11 +152,11 @@ export default function Home() {
 
             <div className="features">
                 <div className="container">
-                    <div className="title">
+                    <div className="title" data-aos="fade-up">
                         <p>لماذا تختارنا</p>
                         <h1>التزامنا بتحقيق العدالة</h1>
                     </div>
-                    <div className="featuresList">
+                    <div className="featuresList" data-aos="fade-up">
 
                         <div className="box">
                             <div className="icon">
@@ -184,7 +184,7 @@ export default function Home() {
 
                     </div>
 
-                    <div className="contactSection">
+                    <div className="contactSection" data-aos="fade-up">
                         <h1>هل تحتاج إلى استشارة قانونية؟</h1>
                         <p>لا تتردد في التواصل معنا. نقدم استشارة أولية مجانية لجميع القضايا.</p>
                         <a href="/contact">احجز استشارتك الآن</a>

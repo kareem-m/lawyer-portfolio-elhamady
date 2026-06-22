@@ -39,14 +39,13 @@ export default function Contact() {
             <Navbar />
             <div className="contactPage" dir="rtl">
                 <div className="container">
-                    <div className="title">
+                    <div className="title" data-aos="fade-up">
                         <p>تواصل معنا</p>
                         <h1>احجز استشارتك القانونية الآن</h1>
                         <p>يسعدنا استقبال استفساراتكم وتحديد موعد للمناقشة المستفيضة لقضاياكم.</p>
                     </div>
 
-                    <div className="contactWrapper">
-                        {/* فورم التواصل */}
+                    <div className="contactWrapper" data-aos="fade-up">
                         <form onSubmit={handleSubmit} className="contactForm">
                             <div className="inputGroup">
                                 <label>الاسم بالكامل *</label>
