@@ -1,8 +1,26 @@
+"use client";
+
 import Link from 'next/link';
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
+
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 0);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     return (
-        <nav>
+        <nav className={scrolled ? "scrolled" : ""}>
             <div className="container">
                 <div className="logoBox">
                     <Link href="/">

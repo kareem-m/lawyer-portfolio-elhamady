@@ -149,12 +149,18 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--second-bg-color);
+    background: transparent;
     color: #eee;
     padding: 15px 0;
     font-size: 14px;
     z-index: 999;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    
+    &.scrolled {
+        background-color: var(--second-bg-color);
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    }
+
     a {
         color: #ccc;
     }
