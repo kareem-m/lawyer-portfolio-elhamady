@@ -1,0 +1,26 @@
+.blogPage {
+    margin: 120px 0 50px;
+
+    .blogGrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 25px;
+    }
+}
+
+.articlePage {
+    margin: 120px 0 50px;
+
+    img {
+        width:100%;
+        max-height:500px;
+        object-fit:cover;
+        border-radius:20px;
+    }
+
+    p {
+        line-height:2.2;
+        color:#ddd;
+        margin-bottom:25px;
+    }
+}

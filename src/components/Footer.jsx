@@ -32,6 +32,7 @@ export default function Footer() {
                             <Link href="#services"> {t("quickLinks.services")} </Link>
                             <Link href="#about"> {t("quickLinks.about")} </Link>
                             <Link href="#contact"> {t("quickLinks.contact")} </Link>
+                            <Link href="/blog"> {t("quickLinks.blog")} </Link>
                             <Link href="/contact"> {t("quickLinks.consultation")} </Link>
                         </div>
                     </div>

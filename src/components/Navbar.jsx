@@ -50,6 +50,7 @@ export default function Navbar() {
                     <Link href="#services">{t("links.services")}</Link>
                     <Link href="#about">{t("links.about")}</Link>
                     <Link href="#contact">{t("links.contact")}</Link>
+                    <Link href="/blog">{t("links.blog")}</Link>
                     <LanguageSwitcher />
                     <Link href="/contact">{t("links.freeConsultation")}</Link>
                 </div>
