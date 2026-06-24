@@ -1,12 +1,14 @@
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import StatsSection from "./components/StatsSection";
+import Popups from "./components/Popups.js";
 import "./globals.css";
 import "./main.css";
 
 export default function Home() {
     return (
         <>
+            <Popups />
             <Navbar />
             <div className="landing">
                 <div className="container" data-aos="fade-up">

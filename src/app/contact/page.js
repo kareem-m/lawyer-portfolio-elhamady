@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
+import Popups from "../components/Popups.js";
 import "../globals.css";
 import "../main.css";
 
@@ -36,6 +37,7 @@ export default function Contact() {
 
     return (
         <>
+            <Popups />
             <Navbar />
             <div className="contactPage" dir="rtl">
                 <div className="container">
