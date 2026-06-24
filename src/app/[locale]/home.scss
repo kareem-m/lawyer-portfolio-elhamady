@@ -260,8 +260,8 @@
                 color: #ccc;
             }
             .locationBox {
-                border-right: 1px solid var(--main-color);
-                padding-right: 20px;
+                border-inline-start: 1px solid var(--main-color);
+                padding-inline-start: 20px;
                 
                 .location, .phone {
                     display: flex;
