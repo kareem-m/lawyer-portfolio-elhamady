@@ -1,0 +1,101 @@
+{
+    "landing": {
+        "experiencePopup": "30 Years of Legal Experience — Alexandria, Egypt",
+        "imageAlt": "General Mohamed Elhamady",
+        "titlePrefix": "Law Office of Major General ",
+        "titleName": "Mohamed Elhamady",
+        "subtitle": "For Legal and Financial Consultations",
+        "description": "We offer integrated legal and financial services with 30 years of legal experience, and 15 years of specialized expertise in public funds. We are committed to protecting your rights and achieving your goals with the highest standards of professionalism and integrity.",
+        "ctaConsultation": "Book a Free Consultation",
+        "ctaServices": "Our Services"
+    },
+    "stateSection": {
+        "experience": "Years of Legal Experience",
+        "publicAffairs": "Years in Public Funds",
+        "successfulCases": "Successful Cases",
+        "commitmentToConfidentiality": "Commitment to Confidentiality"
+    },
+    "services": {
+        "title": "Legal Services",
+        "heading": "Serving You Across All Legal Fields",
+        "description": "We provide a broad range of legal and financial services to protect your interests and achieve your goals.",
+
+        "litigation": {
+            "title": "Litigation and Representation",
+            "description": "Professional legal representation before all levels of courts and judicial authorities in Egypt."
+        },
+
+        "contracts": {
+            "title": "Contract Drafting",
+            "description": "Preparing and reviewing commercial and civil contracts with high legal precision."
+        },
+
+        "publicFunds": {
+            "title": "Public Funds Cases",
+            "description": "15 years of specialized experience in public funds and financial crimes."
+        },
+
+        "familyLaw": {
+            "title": "Family Law",
+            "description": "Handling family and personal status cases with complete confidentiality and professionalism."
+        },
+
+        "administrativeLaw": {
+            "title": "Labor and Administrative Law",
+            "description": "Resolving labor and administrative disputes and representing clients before the State Council."
+        },
+
+        "criminalLaw": {
+            "title": "Criminal Law",
+            "description": "Academic and practical expertise in criminal law and criminal defense."
+        }
+    },
+    "about": {
+        "title": "Major General Mohamed Elhamady Law Firm",
+        "subtitle": "Legal and Financial Consultations",
+
+        "address": "3 Al Obour Buildings, Winget Street, Bolkly, Alexandria, Egypt",
+
+        "description1": "Major General Mohamed Elhamady Law Firm is one of the leading law firms in Alexandria, serving individuals, companies and institutions.",
+
+        "description2": "The firm combines 30 years of legal experience with 15 years of specialization in public funds cases, maintaining the highest standards of professionalism and integrity.",
+
+        "items": {
+            "experience": "30 Years of Legal Experience",
+            "publicFunds": "15 Years in Public Funds",
+            "master": "Master's Degree in Public Law",
+            "phd": "PhD Researcher in Criminal Law",
+            "unafei": "Graduate of UNAFEI, Tokyo, Japan",
+            "jica": "Member of JICA Alumni Association",
+            "peaceKeeping": "Former UN Peacekeeping Member",
+            "courts": "Representation Before All Court Levels"
+        },
+
+        "cta": "Contact Us"
+    },
+    "features": {
+        "title": "Why Choose Us",
+        "heading": "Committed to Justice",
+
+        "academic": {
+            "title": "Distinguished Academic Background",
+            "description": "Master's Degree in Public Law and PhD Researcher in Criminal Law."
+        },
+
+        "international": {
+            "title": "International Experience",
+            "description": "Former UN Peacekeeping member and graduate of UNAFEI in Tokyo, Japan, and member of JICA Alumni Association."
+        },
+
+        "confidentiality": {
+            "title": "Complete Confidentiality",
+            "description": "We guarantee full confidentiality for all information related to your cases and consultations."
+        },
+
+        "contactSection": {
+            "title": "Need Legal Advice?",
+            "description": "Feel free to contact us. We provide a free initial consultation.",
+            "button": "Book Your Consultation"
+        }
+    }
+}

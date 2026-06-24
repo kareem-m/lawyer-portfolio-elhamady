@@ -1,8 +1,12 @@
 "use client";
+
+import Link from "next/link";
+import {useTranslations} from "next-intl";
 import { useEffect, useRef } from "react";
 
 export default function StatsSection() {
     const sectionRef = useRef(null);
+    const t = useTranslations("home.stateSection");
 
     useEffect(() => {
         const counters = sectionRef.current.querySelectorAll(".count");
@@ -44,22 +48,22 @@ export default function StatsSection() {
             <div className="container" data-aos="fade-up">
                 <div className="box">
                     <h2 className="count" data-target="30">0</h2>
-                    <p>عام خبرة قانونية</p>
+                    <p>{t("experience")}</p>
                 </div>
 
                 <div className="box">
                     <h2 className="count" data-target="15">0</h2>
-                    <p>عام في الاموال العامة</p>
+                    <p>{t("publicAffairs")}</p>
                 </div>
 
                 <div className="box">
                     <h2 className="count" data-target="500" data-suffix="+">0</h2>
-                    <p>قضية ناجحة</p>
+                    <p>{t("successfulCases")}</p>
                 </div>
 
                 <div className="box">
                     <h2 className="count" data-target="100" data-suffix="%">0</h2>
-                    <p>التزام بالسرية</p>
+                    <p>{t("commitmentToConfidentiality")}</p>
                 </div>
             </div>
         </section>

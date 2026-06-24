@@ -1,0 +1,32 @@
+{
+    "title": {
+        "small": "Contact Us",
+        "main": "Book Your Legal Consultation Now",
+        "description": "We are pleased to receive your inquiries and schedule an appointment to discuss your case in detail."
+    },
+    "form": {
+        "name": {
+        "label": "Full Name *",
+        "placeholder": "Enter your full name"
+        },
+        "phone": {
+        "label": "Phone Number *",
+        "placeholder": "Phone number for contact (e.g. +20 1234567890)"
+        },
+        "email": {
+        "label": "Email Address (Optional)",
+        "placeholder": "example@domain.com"
+        },
+        "message": {
+        "label": "Consultation Details *",
+        "placeholder": "Briefly describe your case or the type of legal consultation you need..."
+        },
+        "submit": "Send Request",
+        "loading": "Sending..."
+    },
+    "status": {
+        "success": "Your request has been sent successfully! We will contact you as soon as possible.",
+        "serverError": "Something went wrong.",
+        "connectionError": "Failed to connect to the server. Please try again."
+    }
+}
