@@ -1,6 +1,6 @@
 export const blogPosts = [
     {
-        slug: "license-copy-and-legal-validity",
+        slug: "security-tips",
         image: "/blog/law.jpg",
 
         ar: {
