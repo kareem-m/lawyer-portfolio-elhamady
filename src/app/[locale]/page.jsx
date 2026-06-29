@@ -19,7 +19,7 @@ export default function Home() {
         <>
             <Popups />
             <Navbar />
-            <div className="landing">
+            <div id="landing" className="landing">
                 <div className="container" data-aos="fade-up">
                     <div>
                         <div className="popup">

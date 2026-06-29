@@ -224,24 +224,31 @@ nav {
             justify-content: space-between;
             align-items: center;
             gap: 20px;
-            transition: 0.3s;
-            :not(:last-child):hover {
-                color: var(--main-color);
-            }
-            :first-child {
-                color: var(--main-color);
-                font-weight: bold;
-            }
-            :last-child {
-                background-color: var(--main-color);
-                color: #000;
-                padding: 8px 15px;
-                border-radius: 10px;
-                border: 2px solid var(--main-color);
+            
+            a {
                 transition: 0.3s;
-                &:hover {
-                    background-color: transparent;
+
+                &.active {
                     color: var(--main-color);
+                    // font-weight: bold;
+                }
+
+
+                &:not(:last-child):hover {
+                    color: var(--main-color);
+                }
+
+                &:last-child {
+                    background-color: var(--main-color);
+                    color: #000;
+                    padding: 8px 15px;
+                    border-radius: 10px;
+                    border: 2px solid var(--main-color);
+                    transition: 0.3s;
+                    &:hover {
+                        background-color: transparent;
+                        color: var(--main-color);
+                    }
                 }
             }
 

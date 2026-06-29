@@ -34,16 +34,45 @@ export default function Navbar() {
                     behavior: "smooth",
                     block: "start",
                 });
+                window.history.replaceState({}, "", window.location.pathname);
             } else {
                 window.scrollTo({
                     top: 0,
                     behavior: "smooth",
                 });
+                window.history.replaceState({}, "", window.location.pathname);
             }
         } else {
             router.push(`/#${section}`);
         }
     };
+
+
+    const [activeSection, setActiveSection] = useState("");
+    useEffect(() => {
+        const sections = document.querySelectorAll("div[id]");
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        setActiveSection(entry.target.id);
+                    }
+                });
+            },
+            {
+                threshold: 0.4,
+            }
+        );
+
+        sections.forEach((section) => observer.observe(section));
+
+        return () => observer.disconnect();
+    }, [pathname]);
+
+    let isActive = (section) => {
+        return activeSection === section ? "active" : "";
+    }
 
 
     return (
@@ -69,11 +98,11 @@ export default function Navbar() {
                 </label>
 
                 <div className="links">
-                    <a onClick={() => navigate()}>{t("links.home")}</a>
-                    <a onClick={() => navigate("services")}>{t("links.services")}</a>
-                    <a onClick={() => navigate("about")}>{t("links.about")}</a>
-                    <a onClick={() => navigate("contact")}>{t("links.contact")}</a>
-                    <Link href="/blog">{t("links.blog")}</Link>
+                    <a onClick={() => navigate()} className={isActive("landing")}>{t("links.home")}</a>
+                    <a onClick={() => navigate("services")} className={isActive("services")}>{t("links.services")}</a>
+                    <a onClick={() => navigate("about")} className={isActive("about")}>{t("links.about")}</a>
+                    <a onClick={() => navigate("contact")} className={isActive("contact")}>{t("links.contact")}</a>
+                    <Link href="/blog" className={isActive("blog")}>{t("links.blog")}</Link>
                     <LanguageSwitcher />
                     <Link href="/contact">{t("links.freeConsultation")}</Link>
                 </div>

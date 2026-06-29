@@ -13,7 +13,7 @@ export default async function Blog({ params }) {
         <>
             <Navbar />
 
-            <div className="blogPage">
+            <div className="blogPage" id="blog">
                 <div className="container">
 
                     <h1>
