@@ -19,7 +19,7 @@ export default function Home() {
         <>
             <Popups />
             <Navbar />
-            <div id="landing" className="landing">
+            <section id="landing" className="landing">
                 <div className="container" data-aos="fade-up">
                     <div>
                         <div className="popup">
@@ -38,9 +38,9 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
             
-            <div id="services" className="services">
+            <section id="services" className="services">
                 <StatsSection />
                 <div className="container">
                     <div className="title" data-aos="fade-up">
@@ -112,9 +112,9 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div className="about" id="about">
+            <section className="about" id="about">
                 <div className="container">
                     <div className="imageSection">
                         <div className="image" data-aos="fade-up">
@@ -159,9 +159,9 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div className="features">
+            <section className="features">
                 <div className="container">
                     <div className="title" data-aos="fade-up">
                         <p>{t('features.title')}</p>
@@ -195,13 +195,13 @@ export default function Home() {
 
                     </div>
 
-                    <div className="contactSection" id="contact" data-aos="fade-up">
+                    <section className="contactSection" id="contact" data-aos="fade-up">
                         <h1>{t('features.contactSection.title')}</h1>
                         <p>{t('features.contactSection.description')}</p>
                         <Link href="/contact">{t('features.contactSection.button')}</Link>
-                    </div>
+                    </section>
                 </div>
-            </div>
+            </section>
 
             <Footer />
         </>

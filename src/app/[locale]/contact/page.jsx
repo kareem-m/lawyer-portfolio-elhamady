@@ -43,7 +43,7 @@ export default function Contact() {
         <>
             <Popups />
             <Navbar />
-            <div className="contactPage">
+            <section className="contactPage">
                 <div className="container">
                     <div className="title" data-aos="fade-up">
                         <p>{t("title.small")}</p>
@@ -102,7 +102,7 @@ export default function Contact() {
                         </form>
                     </div>
                 </div>
-            </div>
+            </section>
             <Footer />
         </>
     );

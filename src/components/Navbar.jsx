@@ -48,7 +48,7 @@ export default function Navbar() {
 
     const [activeSection, setActiveSection] = useState("");
     useEffect(() => {
-        const sections = document.querySelectorAll("div[id]");
+        const sections = document.querySelectorAll("section[id]");
 
         const observer = new IntersectionObserver(
             (entries) => {

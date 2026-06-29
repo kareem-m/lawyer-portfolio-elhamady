@@ -13,7 +13,7 @@ export default async function Blog({ params }) {
         <>
             <Navbar />
 
-            <div className="blogPage" id="blog">
+            <section className="blogPage" id="blog">
                 <div className="container">
 
                     <h1>
@@ -37,7 +37,7 @@ export default async function Blog({ params }) {
                     </div>
 
                 </div>
-            </div>
+            </section>
 
             <Footer />
         </>
