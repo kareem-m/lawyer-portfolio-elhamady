@@ -34,13 +34,11 @@ export default function Navbar() {
                     behavior: "smooth",
                     block: "start",
                 });
-                window.history.replaceState({}, "", window.location.pathname);
             } else {
                 window.scrollTo({
                     top: 0,
                     behavior: "smooth",
                 });
-                window.history.replaceState({}, "", window.location.pathname);
             }
         } else {
             router.push(`/#${section}`);
