@@ -1,8 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-
-import { Link } from "@/i18n/navigation";
+import { Link, useRouter, usePathname } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import LanguageSwitcher from "./LanguageSwitcher";
 
@@ -22,6 +21,30 @@ export default function Navbar() {
             window.removeEventListener("scroll", handleScroll);
         };
     }, []);
+
+
+
+    const router = useRouter();
+    const pathname = usePathname();
+
+    const navigate = (section) => {
+        if (pathname === "/") {
+            if (section) {
+                document.getElementById(section)?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                });
+            } else {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth",
+                });
+            }
+        } else {
+            router.push(`/#${section}`);
+        }
+    };
+
 
     return (
         <nav className={scrolled ? "scrolled" : ""}>
@@ -46,10 +69,10 @@ export default function Navbar() {
                 </label>
 
                 <div className="links">
-                    <Link href="/">{t("links.home")}</Link>
-                    <Link href="#services">{t("links.services")}</Link>
-                    <Link href="#about">{t("links.about")}</Link>
-                    <Link href="#contact">{t("links.contact")}</Link>
+                    <a onClick={() => navigate()}>{t("links.home")}</a>
+                    <a onClick={() => navigate("services")}>{t("links.services")}</a>
+                    <a onClick={() => navigate("about")}>{t("links.about")}</a>
+                    <a onClick={() => navigate("contact")}>{t("links.contact")}</a>
                     <Link href="/blog">{t("links.blog")}</Link>
                     <LanguageSwitcher />
                     <Link href="/contact">{t("links.freeConsultation")}</Link>
