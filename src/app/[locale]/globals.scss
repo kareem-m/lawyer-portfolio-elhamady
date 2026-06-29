@@ -457,6 +457,7 @@ footer {
 
                     a {
                         transition: 0.3s;
+                        direction: ltr;
                         &:hover {
                             color: #b8860b;
                         }
