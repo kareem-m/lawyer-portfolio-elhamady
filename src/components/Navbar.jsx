@@ -72,9 +72,13 @@ export default function Navbar() {
         return () => observer.disconnect();
     }, [pathname]);
 
-    let isActive = (section) => {
+    const isActive = (section) => {
+        if (section === "blog") {
+            return pathname.startsWith("/blog") ? "active" : "";
+        }
+
         return activeSection === section ? "active" : "";
-    }
+    };
 
 
     return (
