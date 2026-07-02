@@ -1,4 +1,5 @@
 import removeMarkdown from "remove-markdown";
+import Image from "next/image";
 import Link from "next/link";
 import "./BlogCard.scss";
 
@@ -15,13 +16,12 @@ export default function BlogCard({ post, locale }) {
     const article = post[locale];
 
     return (
-        <div className="blogCard" data-aos="fade-up">
-
-            <img src={post.image} alt={article.title} />
-
-            <h2>{article.title}</h2>
-
-            <p>{getExcerpt(article.content)}</p>
+        <Link href={`/${locale}/blog/${post.slug}`} className="blogCard" data-aos="fade-up">
+            <div>
+                <Image src={post.image} alt={article.title} width={1200} height={675} />
+                <h2>{article.title}</h2>
+                <p>{getExcerpt(article.content)}</p>
+            </div>
 
             <Link href={`/${locale}/blog/${post.slug}`}>
                 {locale === "ar"
@@ -29,6 +29,6 @@ export default function BlogCard({ post, locale }) {
                     : "Read Article"}
             </Link>
 
-        </div>
+        </Link>
     );
 }

@@ -1,30 +1,50 @@
 .blogCard {
-    background: var(--box-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--box-color);
     border-radius: 20px;
     overflow: hidden;
-
-    img {
-        width: 100%;
-        height: 250px;
-        object-fit: cover;
+    color: #fff;
+    border: 1px solid var(--bg-color);
+    transition: all 0.3s !important;
+    &:hover {
+        border-color: var(--main-color);
+        background-color: #c6a74013;
     }
 
-    h2 {
-        padding: 20px 20px 10px;
-    }
+    div {
+        img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
 
-    p {
-        padding: 0 20px;
-        color: #bbb;
+        h2 {
+            margin: 0;
+            padding: 20px;
+        }
+
+        p {
+            margin: 0;
+            padding: 0 20px 20px;
+            color: #bbb;
+        }
     }
 
     a {
         display: inline-block;
-        margin: 20px;
+        margin: 0 20px 20px;
         background: var(--main-color);
         color: #000;
         padding: 10px 20px;
+        border: 1px solid var(--main-color);
         border-radius: 10px;
+        transition: all 0.3s;
+        width: fit-content;
+        &:hover {
+            background-color: #a78c34;
+        }
     }
 }
 
