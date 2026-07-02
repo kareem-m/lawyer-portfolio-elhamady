@@ -41,7 +41,11 @@ export default function Navbar() {
                 });
             }
         } else {
-            router.push(`/#${section}`);
+            if (section) {
+                router.push(`/#${section}`);
+            } else {
+                router.push("/");
+            }
         }
     };
 
