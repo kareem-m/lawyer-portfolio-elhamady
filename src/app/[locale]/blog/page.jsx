@@ -1,9 +1,25 @@
+export const dynamic = "force-dynamic";
 import { blogPosts } from "@/data/blogPosts";
 import BlogCard from "@/components/blog/BlogCard";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 import "./blog.scss";
+
+
+
+function shuffleArray(array) {
+    const shuffled = [...array];
+
+    for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+
+    return shuffled;
+}
+
 
 export default async function Blog({ params }) {
 
@@ -25,7 +41,7 @@ export default async function Blog({ params }) {
                     <div className="blogGrid">
 
                         {
-                            blogPosts.map((post) => (
+                            shuffleArray(blogPosts).map((post) => (
                                 <BlogCard
                                     key={post.slug}
                                     post={post}

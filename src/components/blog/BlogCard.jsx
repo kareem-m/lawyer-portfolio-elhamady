@@ -1,5 +1,14 @@
+import removeMarkdown from "remove-markdown";
 import Link from "next/link";
 import "./BlogCard.scss";
+
+function getExcerpt(content, maxLength = 120) {
+    const text = removeMarkdown(content).replace(/\s+/g, " ").trim();
+
+    return text.length > maxLength
+        ? text.slice(0, maxLength) + " ..."
+        : text;
+}
 
 export default function BlogCard({ post, locale }) {
 
@@ -12,7 +21,7 @@ export default function BlogCard({ post, locale }) {
 
             <h2>{article.title}</h2>
 
-            <p>{article.excerpt}</p>
+            <p>{getExcerpt(article.content)}</p>
 
             <Link href={`/${locale}/blog/${post.slug}`}>
                 {locale === "ar"
