@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next"
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { Cairo, Amiri } from "next/font/google";
@@ -54,6 +55,8 @@ export default async function RootLayout({ children, params }) {
                         {children}
                     </AOSProvider>
                 </NextIntlClientProvider>
+                
+                <Analytics />
             </body>
         </html>
     );
