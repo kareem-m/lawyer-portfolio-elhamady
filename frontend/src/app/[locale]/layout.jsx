@@ -55,6 +55,9 @@ export async function generateMetadata({ params }) {
         title,
         description,
         keywords: SEO_KEYWORDS,
+        verification: {
+            google: "jif_YcAZDRe70I0AV6I5C8iRWttooVCyTTbG0IwiXGc",
+        },
         authors: [{ name: "General Mohamed Elhamady Law Office" }],
         creator: "General Mohamed Elhamady Law Office",
         publisher: "General Mohamed Elhamady Law Office",
