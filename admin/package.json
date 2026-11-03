@@ -4,9 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev -p 3001",
-    "build": "next build",
+    "build": "prisma generate --schema src/prisma/schema.prisma && next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "postinstall": "prisma generate --schema src/prisma/schema.prisma"
+  },
+  "prisma": {
+    "schema": "src/prisma/schema.prisma"
   },
   "dependencies": {
     "@neon/config": "^1.10.0",
