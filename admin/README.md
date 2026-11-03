@@ -6,7 +6,6 @@ The admin portal uses the `Article` table in Neon and one fixed administrator ac
 
 ```env
 DATABASE_URL=your_neon_pooled_connection_string
-ADMIN_EMAIL=admin@example.com
 ADMIN_PASSWORD_HASH=your_bcrypt_hash
 SESSION_SECRET=a_long_random_secret
 ```
