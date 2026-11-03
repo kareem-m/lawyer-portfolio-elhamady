@@ -8,7 +8,8 @@ export async function login(_previousState, formData) {
   const password = String(formData?.get("password") || "");
   const passwordHash = String(process.env.ADMIN_PASSWORD_HASH || "")
     .trim()
-    .replace(/^["']|["']$/g, "");
+    .replace(/^["']|["']$/g, "")
+    .replace(/\\\$/g, "$");
 
   if (!passwordHash) {
     return { error: "Admin password is not configured." };
