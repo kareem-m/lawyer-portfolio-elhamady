@@ -43,34 +43,46 @@ function makeSlug(title) {
   return slug || `article-${Date.now()}`;
 }
 
-export async function createArticle(formData) {
-  await requireSession();
-  const article = readArticle(formData);
-  const baseSlug = makeSlug(article.titleEn);
-  let slug = baseSlug;
-  let suffix = 2;
+export async function createArticle(_previousState, formData) {
+  try {
+    await requireSession();
+    const article = readArticle(formData);
+    const baseSlug = makeSlug(article.titleEn);
+    let slug = baseSlug;
+    let suffix = 2;
 
-  while (await prisma.article.findUnique({ where: { slug } })) {
-    slug = `${baseSlug}-${suffix}`;
-    suffix += 1;
+    while (await prisma.article.findUnique({ where: { slug } })) {
+      slug = `${baseSlug}-${suffix}`;
+      suffix += 1;
+    }
+
+    await prisma.article.create({ data: { ...article, slug } });
+    revalidatePath("/");
+    redirect("/");
+  } catch (error) {
+    if (error?.digest?.startsWith("NEXT_REDIRECT")) throw error;
+    console.error("Could not create article.", error);
+    return { error: "Could not save the article. Check the image URL and try again." };
   }
-
-  await prisma.article.create({ data: { ...article, slug } });
-  revalidatePath("/");
-  redirect("/");
 }
 
-export async function updateArticle(formData) {
-  await requireSession();
-  const id = String(formData.get("id") || "");
-  if (!id) throw new Error("Article id is required.");
+export async function updateArticle(_previousState, formData) {
+  try {
+    await requireSession();
+    const id = String(formData.get("id") || "");
+    if (!id) throw new Error("Article id is required.");
 
-  await prisma.article.update({
-    where: { id },
-    data: readArticle(formData),
-  });
-  revalidatePath("/");
-  redirect("/");
+    await prisma.article.update({
+      where: { id },
+      data: readArticle(formData),
+    });
+    revalidatePath("/");
+    redirect("/");
+  } catch (error) {
+    if (error?.digest?.startsWith("NEXT_REDIRECT")) throw error;
+    console.error("Could not update article.", error);
+    return { error: "Could not save the article. Check the image URL and try again." };
+  }
 }
 
 export async function deleteArticle(formData) {

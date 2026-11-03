@@ -1,10 +1,13 @@
 "use client";
 
+import { useActionState } from "react";
 import Link from "next/link";
 
 export default function ArticleForm({ action, article }) {
+  const [state, formAction, pending] = useActionState(action, null);
+
   return (
-    <form action={action} className="article-form">
+    <form action={formAction} className="article-form">
       {article && <input type="hidden" name="id" value={article.id} />}
       <div className="form-grid">
         <label>
@@ -41,7 +44,7 @@ export default function ArticleForm({ action, article }) {
       </div>
       <details className="markdown-help">
         <summary>Markdown writing guide</summary>
-        <p>Use these simple examples when writing your article.\</p>
+        <p>Use these simple examples when writing your article.</p>
         <div className="markdown-examples">
           <div><strong>Title</strong><code># Your title</code></div>
           <div><strong>Subtitle</strong><code>## Your subtitle</code></div>
@@ -54,9 +57,12 @@ export default function ArticleForm({ action, article }) {
           <div><strong>Divider</strong><code>---</code></div>
         </div>
       </details>
+      {state?.error && <p className="form-error">{state.error}</p>}
       <div className="form-actions">
         <Link href="/" className="button secondary">Cancel</Link>
-        <button type="submit">{article ? "Save changes" : "Add article"}</button>
+        <button type="submit" disabled={pending}>
+          {pending ? "Saving..." : article ? "Save changes" : "Add article"}
+        </button>
       </div>
     </form>
   );
